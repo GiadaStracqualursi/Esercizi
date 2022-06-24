@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+
+
+body{
+    color: white;
+    
+}
+
+h4{
+    padding-left: 10px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10px;
+    background-color: #24252a;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    border-bottom: solid 2px rgb(252, 254, 252);
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.input{
+    background-color: white;
+}
+.input:hover {
+    background-color: green;
+    color: white;
+}
+
+
+
+.line {
+    height: 8px;
+    width: 45px;
+    background: white;
+    margin: 20px;
+    transition: all 300ms;
+   
+}
+
+.hamburger{
+    visibility: hidden;
+}
+/*----------------------------------------------------*/
+
+
+@media only screen and(max-width:768px) {
+
+    .navbar{
+        visibility: hidden;
+    }
+
+    .li a { 
+        visibility: hidden;
+    }
+  
+    .hamburger{
+        visibility: visible;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: black;
+    }
+}
